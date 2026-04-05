@@ -63,3 +63,5 @@ end
 
 # Loads doenv files
 gem "dotenv", "~> 3.2"
+
+gem "devise", "~> 5.0"
