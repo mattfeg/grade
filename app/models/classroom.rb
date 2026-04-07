@@ -22,6 +22,8 @@ class Classroom < ApplicationRecord
     ncd: ("21:00".."22:40")
   }
 
+  validates :cod, uniqueness: true
+
   scope :now, -> { where(time_slot: current_time_slot) }
 
   def self.current_time_slot
