@@ -1,4 +1,4 @@
-class CreateApiV1Classrooms < ActiveRecord::Migration[8.1]
+class CreateClassrooms < ActiveRecord::Migration[8.1]
   def change
     create_table :classrooms do |t|
       t.string :name
