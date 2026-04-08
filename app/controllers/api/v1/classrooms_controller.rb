@@ -1,4 +1,6 @@
 class Api::V1::ClassroomsController < ApplicationController
+  skip_before_action :verify_authenticity_token
+  before_action :authenticate_user!
   before_action :set_classroom, only: %i[ show update destroy ]
 
   # GET /api/v1/classrooms
